@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Ordering Form</title>
+	</head>
+	
+	<body>
+	<header>
+	<h1> Pizza Ordering Form </h1>
+	</header>
+	
+	<main>
+	<form>
+		<h2> Contact Information </h2>
+			
+		<label for="inName">Name:</label>
+		<input type="text" name="inName" id="inName" required> <br>
+			
+		<label for="inPhone">Phone:</label>
+		<input type="tel" name="inPhone" id="inPhone" required pattern="[0-9]{10}" title="Please enter 10-digits (Numbers only)."> <br>
+			
+		<label for="inEmail">Email:</label>
+		<input type="email" name="inEmail" id="inEmail" required title="Please enter a valid email address using @ symbol."> <br>
+	
+		<h2> Select Pizza Size </h2>
+		<select name="selectSize" id="selectSize" required title="Please select Medium, Large, or XL.">
+			<option value="">--Select Size--</option>
+			<option>Medium</option>
+			<option>Large</option>
+			<option>XLarge</option>
+		</select>
+	
+		<h2> Select Sauce </h2>
+			<input type="radio" name="selectSauce" required><label>Marinara</label> <br>
+			<input type="radio" name="selectSauce"><label>Ranch</label> <br>
+			<input type="radio" name="selectSauce"><label>No Sauce</label> <br>
+			
+		<h2> Select Toppings </h2>
+			<input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+			<label for="pepperoni">Pepperoni</label>
+
+			<input type="checkbox" id="sausage" name="toppings" value="Sausage">
+			<label for="sausage">Sausage</label> <br>
+
+			<input type="checkbox" id="mushroom" name="toppings" value="Mushroom">
+			<label for="mushroom">Mushroom</label>
+
+			<input type="checkbox" id="pineapple" name="toppings" value="Pineapple">
+			<label for="pineapple">Pineapple</label> <br>
+
+			<input type="checkbox" id="peppers" name="toppings" value="Peppers">
+			<label for="peppers">Peppers</label>
+
+			<input type="checkbox" id="onions" name="toppings" value="Onions">
+			<label for="onions">Onions</label>
+
+		<h2> Additional Instructions </h2>
+			<textarea name="addInstructions" id="addInstructions"> Add instructions</textarea> <br>
+		
+		<input type="submit" value="Submit"> <br>
+	
+	</form>
+	
+	<br>
+	
+	<table border=1>
+		<caption>List of My Favorite Games</caption>
+		
+		<thead>
+			<tr>
+				<th>Developer</th>
+				<th>Title</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td rowspan="2">Freebird</td>
+				<td>To The Moon</td>
+				<td>2011</td>
+			</tr>
+			<tr>
+				<td>Finding Paradise</td>
+				<td>2017</td>
+			</tr>
+			<tr>
+				<td>Netease</td>
+				<td>Identity V</td>
+				<td>2018</td>
+			</tr>
+			<tr>
+				<td>Blizzard</td>
+				<td>Overwatch 2</td>
+				<td>2023</td>
+			</tr>
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<td colspan="3">Count:4</td>
+			</tr>
+		</tfoot>
+		</table> <br>
+		
+	</main>
+	</body>
+	</html>
+		
