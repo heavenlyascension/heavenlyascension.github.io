@@ -1,0 +1,118 @@
+/*CSS Lecture 
+Inline Styling 	(least recc.)
+Internal Style Sheet
+External Style Sheet
+
+Inline ex: <p style ="color:red;">Here's a paragraph</p>
+	1. repeats coding
+	2. messy
+	
+Internal ex:
+<head>
+	<style>
+        p {
+			background-color: blue;
+			border: 1px solid black;
+        }
+    </style>
+</head>
+	1. note it is inside head
+	2. selector makes everything, ex: p, blue w a border
+	
+External style sheet | separate file completely
+External ex:
+<head>
+		<title>CSS Examples</title>
+		<link rel="stylesheet" href="myStyle.css">
+	</head>
+	
+	p {
+		color: green;
+		background: black;
+	}
+	
+	1. CSS Selectors
+		a. p (paragraph), div --- these are just the names of Tags
+		b. #intro{} <p id="intro"> --- ID of a tag
+		c. .hightlight{} <p class="highlight"> === class selector to specify elements
+		
+	try arial, then verdana, then sans-serif (fail-case)
+p { font-family: 'arial', 'verdana', sans-serif; }
+
+	pixels or em
+p { font-size: 18px }
+p { font-size: .8em } --- relative styling so 80% of 18 px
+p { vw }
+span {
+	font=weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	}
+
+The box model:
+Content
+Padding - white space between content and border
+Border
+Margin - separates elements using white space outside Border
+*/
+
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	font-family: Arial;
+	text-align: center;
+}
+
+h2 {
+	font-family: Arial;
+}
+
+p {
+	font-family: Georgia, serif;
+}
+
+article {
+
+}
+
+#paragraph2 {
+	border: 4px solid green;
+	padding: 10px;
+	background-color: white;
+	max-width: 500px;
+}
+
+.blue {
+	padding: 10px;
+	color: white;
+	background-color: darkblue;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+a[href="http://www.w3schools.com"] {
+    color: red;
+}
+
+table {
+	max-width: 600px;
+	border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;     
+	padding: 5px;
+}
+
+th {
+    background-color: lightgrey;               
+}
+
+td {
+	background-color: white;
+}
+
