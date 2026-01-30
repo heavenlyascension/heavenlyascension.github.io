@@ -1,0 +1,200 @@
+/*body {
+	
+}
+
+#thanks {
+	float: right;
+	position: sticky;
+	top: -100px;
+	
+}
+
+#jumpMenu {
+	position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: yellow;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+header {
+	font-family: Arial;
+	background-color: red;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav button {
+	position: sticky;
+	top: 0;
+	padding: 5px;
+	color: blue;
+}
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#container div {
+	
+}
+
+
+main {
+    margin-left: 250px;
+}
+
+footer {
+	
+}
+*/
+
+body {
+	
+    margin: 0;
+    padding: 0;
+	
+}
+
+#jumpMenu {
+	
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    background-color: yellow;
+    padding: 15px;
+    overflow-y: auto;
+    box-sizing: border-box;
+	
+}
+
+#jumpMenu h2 {
+	
+    text-align: center;
+    margin-top: 0;
+	margin-bottom: 25px;
+	
+}
+
+#thanks {
+	
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+	color: white;
+	font-family: arial;
+	font-size: 20px;
+    padding: 10px;
+    border: 3px solid black;
+	
+}
+
+header {
+	
+    font-family: Arial;
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    z-index: 100;
+    box-sizing: border-box;
+	
+}
+
+header p {
+	
+    background-color: red;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+	
+}
+
+header nav {
+	
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+	
+}
+
+header nav button {
+	
+    padding: 10px 25px;
+    color: white;
+    background-color: blue;
+    border: 3px solid white;
+    cursor: pointer;
+	
+}
+
+main {
+	
+    margin-left: 15%;
+    padding-top: 150px;
+	
+}
+
+main > h1 {
+	
+    text-align: center;
+    padding: 0 20px;
+	
+}
+
+#container {
+	
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    padding: 15px;
+    justify-content: flex-start;
+	
+}
+
+#container article {
+	
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+	
+}
+
+#container article h2 {
+	
+    margin-top: 0;
+	
+}
+
+footer {
+	
+    background-color: maroon;
+    padding: 15px;
+    text-align: center;
+	color: white;
+	
+}
+
+footer address div {
+	
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+	
+}
