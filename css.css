@@ -1,62 +1,3 @@
-/*body {
-	
-}
-
-#thanks {
-	float: right;
-	position: sticky;
-	top: -100px;
-	
-}
-
-#jumpMenu {
-	position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 200px;
-    background-color: yellow;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-header {
-	font-family: Arial;
-	background-color: red;
-    text-align: center;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-}
-
-nav button {
-	position: sticky;
-	top: 0;
-	padding: 5px;
-	color: blue;
-}
-
-#container {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-#container div {
-	
-}
-
-
-main {
-    margin-left: 250px;
-}
-
-footer {
-	
-}
-*/
-
 body {
 	
     margin: 0;
@@ -197,4 +138,5 @@ footer address div {
     flex-direction: column;
     gap: 5px;
 	
+
 }
