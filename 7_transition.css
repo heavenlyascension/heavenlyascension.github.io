@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#menuItems {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 18%;
+    background-color: black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#menuItems button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#menuItems button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#jumpMenu {
+    display: none;
+    background-color: yellow;
+    padding: 5px 0;
+    margin: 0;
+}
+
+#recentArticles:hover + #jumpMenu, #jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li {
+    margin: 0;
+    padding: 0;
+}
+
+#jumpMenu a {
+    display: block;
+    padding: 6px 10px;
+    color: blue;
+	text-align: center;
+}
+
+#jumpMenu a:hover {
+    background-color: blue;
+    color: black;
+}
+
+#jumpMenu a:visited {
+    color: red;
+}
+
+header {
+    font-family: Arial;
+    position: fixed;
+    top: 0;
+    left: 18%;
+    width: 85%;
+    z-index: 100;
+}
+
+header p {
+    background-color: red;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin-left: 18%;
+    padding-top: 80px;
+}
+
+main > h1 {
+    text-align: center;
+	font-size: 35px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+}
+
+#container article {
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: lightgray;
+    transition: all 2s;
+}
+
+#container article:hover {
+    color: black;
+    width: 350px;
+	font-size: 18px;
+}
+
+#container article > p:first-of-type::first-letter {
+    font-family: "Times New Roman";
+    font-size: 36px;
+}
+
+#container article a[href*="google.com"]::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    background-image: url("arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+#thanks {
+    position: fixed;
+    bottom: -20px;
+    right: 0;
+    background-color: lightblue;
+	color: blue;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: maroon;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+footer address div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
