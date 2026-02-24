@@ -1,0 +1,51 @@
+<!-- Pokemon API JS 
+CIS4004 2-17-26 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 6: Asynchronous JavaScript</title>
+  <link rel="stylesheet" href="6-poke.css" />
+</head>
+<body>
+
+  <div id="ui">
+    <h1>Pokedex</h1>
+
+    <div id="pokeSearch">
+      <input type="text" id="pokeInput" placeholder="Enter name or ID..." />
+      <button id="searchBtn">Find</button>
+    </div>
+
+    <div id="pokeDisplay" class="hidden">
+      <div id="imgWrap">
+        <img id="pokePic" src="" alt="Pokemon" />
+        <h2 id="pokeName"></h2>
+      </div>
+
+      <div id="pokeDetail">
+		<audio id="pokeSound" controls></audio>
+
+        <div id="pokeMoves">
+          <label>Move 1: <select id="m1"></select></label>
+          <label>Move 2: <select id="m2"></select></label>
+          <label>Move 3: <select id="m3"></select></label>
+          <label>Move 4: <select id="m4"></select></label>
+        </div>
+
+        <button id="teamAdd">Add to Team</button>
+      </div>
+	  
+    </div>
+
+    <div id="pokeTeam" class="hidden">
+      <h2>My Team</h2>
+      <div id="inTeam"></div>
+    </div>
+  </div>
+
+  <script src="6-poke.js"></script>
+</body>
+</html>
